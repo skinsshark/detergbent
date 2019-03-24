@@ -555,9 +555,9 @@ var jsc = {
 		} else if (target._jscControlName) {
 			jsc.onControlPointerStart(e, target, target._jscControlName, 'touch');
 		} else {
-			if (jsc.picker && jsc.picker.owner) {
-				jsc.picker.owner.hide();
-			}
+			// if (jsc.picker && jsc.picker.owner) {
+			// 	jsc.picker.owner.hide();
+			// }
 		}
 	},
 
@@ -569,9 +569,9 @@ var jsc = {
 
 	onParentScroll : function (e) {
 		// hide the picker when one of the parent elements is scrolled
-		if (jsc.picker && jsc.picker.owner) {
-			jsc.picker.owner.hide();
-		}
+		// if (jsc.picker && jsc.picker.owner) {
+		// 	jsc.picker.owner.hide();
+		// }
 	},
 
 
