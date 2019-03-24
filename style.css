@@ -9,6 +9,12 @@ body {
   height: 90vh;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 .st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
 .st1{fill:#1027FF;}
 
@@ -20,7 +26,8 @@ body {
   height: 55vh;
   width: auto;
   position: fixed;
-  top: 28vh;
+  top: 25vh;
+  z-index: 5;
 }
 
 input {
@@ -30,7 +37,7 @@ input {
 h1 {
   color: #fff;
   position: fixed;
-  bottom: 28vh;
+  bottom: 30vh;
   z-index: 9;
   font-size: 0.9rem;
   text-transform: uppercase;
