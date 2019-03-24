@@ -460,7 +460,7 @@ var jsc = {
 				(pp[0] + ps[0] > tp[0] || pp[0] < tp[0] + ts[0]) &&
 				(pp[1] + ps[1] < tp[1] + ts[1]);
 
-			jsc._drawPosition(thisObj, x, y, positionValue, contractShadow);
+			// jsc._drawPosition(thisObj, x, y, positionValue, contractShadow);
 		}
 	},
 
@@ -537,9 +537,9 @@ var jsc = {
 			jsc.onControlPointerStart(e, target, target._jscControlName, 'mouse');
 		} else {
 			// Mouse is outside the picker controls -> hide the color picker!
-			if (jsc.picker && jsc.picker.owner) {
-				jsc.picker.owner.hide();
-			}
+			// if (jsc.picker && jsc.picker.owner) {
+			// 	jsc.picker.owner.hide();
+			// }
 		}
 	},
 
@@ -1646,9 +1646,10 @@ var jsc = {
 			}
 
 			if (p.wrap.parentNode != container) {
+        p.wrap.setAttribute("id", "picker");
+        p.wrap.removeAttribute("style");
 				container.appendChild(p.wrap);
 			}
-
 			jsc.setClass(THIS.targetElement, THIS.activeClass);
 		}
 
